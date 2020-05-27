@@ -1,0 +1,5 @@
+# Performance scenarios for santa-tracker-android project
+include required(file("gradle-benchmark-base/incremental-base"))
+
+file-to-change  = "subprojects/file-watching/src/main/java/org/gradle/internal/watch/vfs/impl/WatchingVirtualFileSystem.java"
+tasks-to-measure = [":fileWatching:integTestClasses"]
